@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./expensy_backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./expensy_backend/.env
+    depends_on:
+      - mongo
+      - redis
+    volumes:
+      - backend-logs:/app/logs
+  frontend:
+    build:
+      context: ./expensy_frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./expensy_frontend/.env.local
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+
+volumes:
+  mongo-data:
+  redis-data:
+  backend-logs:
