@@ -1,5 +1,43 @@
 <!-- Final Project: End-to-End DevOps Deployment -->
 
+# Expensy 💸
+
+Expensy is a full-stack expense tracking app built with Node.js, Next.js, MongoDB, and Redis — deployed on Azure Kubernetes Service (AKS) with full CI/CD automation via GitHub Actions.
+
+## 🚀 Features
+- Add, edit, and delete expenses
+- Real-time updates via Redis
+- Secure backend API with MongoDB
+- Responsive frontend built with Next.js
+
+## 🛠️ Tech Stack
+- **Frontend**: Next.js
+- **Backend**: Node.js + Express
+- **Database**: MongoDB
+- **Cache**: Redis
+- **Containerization**: Docker
+- **Orchestration**: Kubernetes (AKS)
+- **CI/CD**: GitHub Actions
+
+## 🧪 Local Development
+```bash
+docker-compose up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Lesson Overview :pencil2:
 
 In this project, we will focus on the hands-on implementation of the learnings throughout this program, where you will gain practical insights while setting up the entire DevOps cycle and deploying applications using acquired best practices. 
