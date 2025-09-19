@@ -1,15 +1,16 @@
 {
-  "name": "formitbe",
+  "name": "expensy-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API for Expensy expense tracker",
+  "main": "dist/server.js",
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
     "start": "npm run build && node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yahea Thakeb",
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.20.2",
